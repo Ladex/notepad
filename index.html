@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <img src="" alt="" id="img-stream2">
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="">
+        var socket = io.connect('https://notepad-ladex.c9users.io');
+        
+        var imgChunks = [];
+        
+        socket.on('img-chunk',function(chunk){
+            var img = document.getElementById('img-stream2');
+            imgChunks.push(chunk);
+            img.setAttribute('src','data:image/jpeg;base64', + window.btoa(imgChunks));
+        });
+    </script>
+    <h3>Hello</h3>
+</body>
+</html>

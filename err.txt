@@ -1,0 +1,44 @@
+
+
+  path.normalize
+    ✓ should normalize path
+
+  path.join
+    ✓ should join paths
+
+  path.resolve
+    ✓ should resolve paths
+
+  path.sep
+    ✓ should seperated the folder names from the path
+
+  path.relative
+    ✓ should find the relative path between 2 absolute paths
+
+  Extracting components of a path
+    path.dirname
+      ✓ should retrieve the directory of the file path
+    path.basename
+      ✓ should retrieve the filename from the path
+      ✓ should remove the file extension with an optional parameter
+    path.extname
+      ✓ should determine the extension when it exists
+      ✓ should return an empty string when extension does not exist
+      ✓ should return the . when the file ends with a .
+
+  fs module
+    Querying file statistics
+      ✓ should return statistics
+    Opening a file
+      ✓ should open a file
+    readin from a file
+      ✓ should read from a file
+    Writing to a file
+      ✓ should write to a file
+    Closing a file
+All done with no errors
+      ✓ should close a file
+
+
+  16 passing (41ms)
+
